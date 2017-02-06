@@ -1,3 +1,34 @@
 h1 {
   color:red;
 }
+
+div.dropdown-content {
+	display:none;
+	font-size: 14px;
+}
+
+ul li {
+	font-size: 14px;
+}
+
+div.dropdown-title:hover .dropdown-content {
+	display: list-item;
+}
+
+#toc.toc {
+	width: 500px;
+	margin: auto;
+	background-color: #FFF;
+}
+
+#toctitle {
+	font-size: 20px;
+}
+
+.reflist.references-column-width {
+	display: none;
+}
+
+#references:hover .reflist.references-column-width{
+	display: block;
+}
