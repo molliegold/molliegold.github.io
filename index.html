@@ -1,10 +1,71 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Mollie</title>
+		<title>Mollie Gold</title>
+		<link href="https://fonts.googleapis.com/css?family=Bevan|Open+Sans+Condensed:300" rel="stylesheet">
+		<style>
+			.dropContent {
+				display: none;
+				width: 220px;
+				height: 220px;
+				border: 2px solid black;
+				font-family: 'Open Sans Condensed', sans-serif;
+				font-size: 22px;
+				padding-left: 0.5em;
+				padding-right: 0.5em;
+				position: absolute;
+				margin-left: 50px;
+				background-color: #bebcff;
+				animation-duration: 6s;
+				animation-name: example;
+			}
+
+			.drop {
+				font-family: 'Bevan', cursive;
+				font-size: 34px;
+				display: inline-block;
+				width: 350px;
+				height: 100px;
+				text-align: center;
+			}
+
+			.drop:hover .dropContent{
+				display: block;
+			}
+
+			.drop:hover a {
+				color: black;
+			}
+
+			a {
+				color: #ff2bb6;
+			}
+
+			 @keyframes example {
+			 	0% {background-color: #bebcff;}
+			 	40% {background-color: #ffbcbc;}
+			 	80% {background-color: #fbffbc;}
+			 	100% {background-color: #bebcff;}
+			 }
+		</style>
 	</head>
 	<body>
-		<p><a href="exercise-1/index.html">Exercise One</a></p>
-		<p><a href="exercise-2/index.html">Exercise Two</a></p>
+
+		<div class="drop">
+			<p><a href="exercise-1/index.html">exercise one</a></p>
+				<div class="dropContent">
+					<p><em>Prompt:</em>
+						<br>Create a simple web experience that triggers emotions from the viewer, only using HTML.</p>
+				</div>
+		</div>
+
+		<div class="drop">
+			<p><a href="exercise-2/index.html">exercise two</a></p>
+				<div class="dropContent">
+					<p><em>Prompt:</em>
+						<br>Choose a wikipedia article and alter the look of the page to reflect the subject by overriding their default CSS.</p>
+				</div>
+		</div>
+
 	</body>
 </html>

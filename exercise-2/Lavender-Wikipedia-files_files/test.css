@@ -42,14 +42,13 @@ th,td {
 
 /*FIXED HEADER*/
 #fixedHeader {
-	text-align: center;
 	position: fixed;
 	width: 100%;
 	background-color: white;
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	line-height: 40px;
+	line-height: 30px;
 }
 
 /*TOP SECTION DIV*/
