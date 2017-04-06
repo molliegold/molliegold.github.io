@@ -1,0 +1,404 @@
+body {
+	background-color: grey;
+}
+#all {
+	position: absolute;
+	left: 500px;
+}
+img {
+	width: 335px;
+	height: auto;
+	position: absolute;
+}
+
+#screen {
+	width: 283px;
+	height: 500px;
+	background-color: white;
+	border: 4px solid black;
+	position: absolute;
+	left: 24px;
+	top: 100px;
+}
+
+/**********************************************************************/
+/*logo*/
+h1 {
+	position: absolute;
+	font-family: "Helvetica", sans-serif;
+	font-size: 48px;
+	text-align: center;
+	color: #8EBDF3;
+	z-index: 1;
+}
+h2 {
+	position: absolute;
+	font-family: "Helvetica", sans-serif;
+	font-size: 48px;
+	text-align: center;
+	color: #E489A2;
+	left: 7px;
+	top: -2px;
+	z-index: 0;
+}
+
+/**********************************************************************/
+/*smaller logo*/
+h3 {
+	position: absolute;
+	font-family: "Helvetica", sans-serif;
+	font-size: 27px;
+	text-align: center;
+	color: #8EBDF3;
+	left: 7px;
+	z-index: 1;
+}
+h4 {
+	position: absolute;
+	font-family: "Helvetica", sans-serif;
+	font-size: 27px;
+	text-align: center;
+	color: #E489A2;
+	left: 10px;
+	top: -7px;
+	z-index: 0;
+}
+
+/**********************************************************************/
+/*sign in w/ facebook*/
+.sign-up {
+	width: 230px;
+	height: 70px;
+	background-color: #8EBDF3;
+	box-shadow: 6px 6px 0px #000000;
+	position: absolute;
+	left: 25px;
+	top: 250px;
+}
+
+.sign-up p {
+	font-family: "Helvetica", sans-serif;
+	font-size: 20px;
+	position: absolute;
+	left: 10px;
+	top: 5px;
+	text-decoration: none;
+	color: white;
+}
+
+.no-fb {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 16px;
+	position: absolute;
+	left: 60px;
+	top: 330px;
+}
+
+/**********************************************************************/
+/*log in screen*/
+.log-in {
+	font-family: "Helvetica", sans-serif;
+	font-size: 20px;
+	display: block;
+	position: absolute;
+	left: 65px;
+	top: 170px;
+}
+
+.fb-logo {
+	width: 40px;
+	height: auto;
+	position: absolute;
+	left: 20px;
+	top: 180px;
+}
+
+/*form input styling*/
+.form {
+	position: absolute;
+	left: 20px;
+	top: 235px;
+}
+input {
+	width: 230px;
+	height: 20px;
+	padding: 3px 6px;
+	border-radius: 8px;
+    margin: 8px 0;
+    border: 2px solid #ccc;
+    outline: none;
+}
+
+form {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 14px;
+}
+
+input[type=text]:focus {
+    border: 2px solid #AB88D4;
+    font-size: 14px;
+    font-family: "Avenir Next", sans-serif;
+}
+
+input[type=password]:focus {
+    border: 2px solid #AB88D4;
+    font-size: 14px;
+}
+
+/*log in button*/
+.log-button {
+	width: 150px;
+	height: 60px;
+	background-color: #AB88D4;
+	box-shadow: 6px 6px 0px #000000;
+	position: absolute;
+	left: 60px;
+	top: 380px;
+}
+
+.log-button p {
+	font-family: "Helvetica", sans-serif;
+	font-size: 20px;
+	position: absolute;
+	left: 40px;
+	text-decoration: none;
+	color: white;
+}
+
+/**********************************************************************/
+/*drop down choose school*/
+.school-form {
+	position: absolute;
+	top: 200px;
+	left: 10px;
+}
+fieldset {
+    border: 2px solid black;
+}
+/*label {
+    display: block;
+    margin: 30px 0 0 0;
+}
+.overflow {
+    height: 200px;
+}*/
+
+/**********************************************************************/
+/*main menu tabs -- EVENTS*/
+.events-tab {
+	position: absolute;
+	width: 250px;
+	height: 120px;
+	background-color: #E489A2;
+	box-shadow: 6px 6px 0px #000000;
+	left: 15px;
+	top: 80px;
+}
+
+.events-tab p {
+	font-family: "Helvetica", sans-serif;
+	font-size: 38px;
+	position: absolute;
+	left: 65px;
+	text-decoration: none;
+	color: black;
+}
+
+/*main menu tabs -- PLACES*/
+.places-tab {
+	position: absolute;
+	width: 250px;
+	height: 120px;
+	background-color: #FAF06B;
+	box-shadow: 6px 6px 0px #000000;
+	left: 15px;
+	top: 220px;
+}
+
+.places-tab p {
+	font-family: "Helvetica", sans-serif;
+	font-size: 38px;
+	position: absolute;
+	left: 65px;
+	text-decoration: none;
+	color: black;
+}
+
+/*main menu tabs -- CONNECT*/
+.connect-tab {
+	position: absolute;
+	width: 250px;
+	height: 120px;
+	background-color: #8EBDF3;
+	box-shadow: 6px 6px 0px #000000;
+	left: 15px;
+	top: 360px;
+}
+
+.connect-tab p {
+	font-family: "Helvetica", sans-serif;
+	font-size: 38px;
+	position: absolute;
+	left: 50px;
+	text-decoration: none;
+	color: black;
+}
+
+/**********************************************************************/
+/*events overview nav*/
+
+/*nav menu tabs -- EVENTS*/
+.events-nav {
+	position: absolute;
+	width: 85px;
+	height: 30px;
+	background-color: #FAF06B;
+	box-shadow: 3px 3px 0px #000000;
+	left: 5px;
+	top: 70px;
+}
+
+.events-nav p {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 16px;
+	position: absolute;
+	left: 15px;
+	margin-top: 4px;
+	text-decoration: none;
+	color: black;
+}
+
+/*nav menu tabs -- PLACES*/
+.places-nav {
+	position: absolute;
+	width: 85px;
+	height: 30px;
+	background-color: #E489A2;
+	box-shadow: 3px 3px 0px #000000;
+	left: 98px;
+	top: 70px;
+}
+
+.places-nav p {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 16px;
+	position: absolute;
+	left: 17px;
+	margin-top: 4px;
+	text-decoration: none;
+	color: black;
+}
+
+/*nav menu tabs -- CONNECT*/
+.connect-nav {
+	position: absolute;
+	width: 85px;
+	height: 30px;
+	background-color: #E489A2;
+	box-shadow: 3px 3px 0px #000000;
+	left: 190px;
+	top: 70px;
+}
+
+.connect-nav p {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 16px;
+	position: absolute;
+	left: 11px;
+	margin-top: 4px;
+	text-decoration: none;
+	color: black;
+}
+
+/*date*/
+.date {
+	font-family: "Helvetica", sans-serif;
+	font-size: 20px;
+	position: absolute;
+	left: 10px;
+	top: 95px;
+}
+
+/*events overview scroll*/
+.events-scroll {
+	position: absolute;
+	left: 10px;
+	top: 150px;
+	width: 265px;
+	height: 350px;
+	overflow-y: scroll;
+	/*scrollbar-base-color:#E489A2;
+	scrollbar-face-color: #E489A2;
+	scrollbar-track-color: #E489A2;*/
+}
+/*zadie*/
+.zadie {
+	display: block;
+	height: 70px;
+	border-top: 1px solid black;
+}
+
+h5 {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 18px;
+	margin-top: 8px;
+	margin-left: 5px;
+	display: inline-block;
+}
+
+.events-scroll .zadie p.time {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 15px;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.events-scroll .zadie p {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 13px;
+	margin: 0;
+	margin-top: -25px;
+	margin-left: 5px;
+}
+
+/**********************************************************************/
+/*events detail nav -- EVENTS*/
+
+.detail-events-nav {
+	position: absolute;
+	width: 270px;
+	height: 30px;
+	background-color: #FAF06B;
+	box-shadow: 3px 3px 0px #000000;
+	left: 5px;
+	top: 70px;
+}
+
+.detail-events-nav p {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 16px;
+	text-align: center;
+	margin-top: 4px;
+	text-decoration: none;
+	color: black;
+}
+
+/*main div*/
+.main-map {
+	position: absolute;
+	left: 10px;
+	top: 120px;
+}
+/*google maps*/
+iframe {
+	width: 260px;
+	height: 100px;
+	border: 0;
+}
+
+/*main event bottom section*/
+.detail-event {
+	position: absolute;
+	left: 10px;
+	top: 300px;
+}
