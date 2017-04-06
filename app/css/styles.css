@@ -21,6 +21,10 @@ img {
 	top: 100px;
 }
 
+a {
+	text-decoration: none;
+}
+
 /**********************************************************************/
 /*logo*/
 h1 {
@@ -44,6 +48,7 @@ h2 {
 
 /**********************************************************************/
 /*smaller logo*/
+
 h3 {
 	position: absolute;
 	font-family: "Helvetica", sans-serif;
@@ -52,6 +57,7 @@ h3 {
 	color: #8EBDF3;
 	left: 7px;
 	z-index: 1;
+	margin-top: 5px;
 }
 h4 {
 	position: absolute;
@@ -60,7 +66,7 @@ h4 {
 	text-align: center;
 	color: #E489A2;
 	left: 10px;
-	top: -7px;
+	margin-top: 8px;
 	z-index: 0;
 }
 
@@ -188,11 +194,11 @@ fieldset {
 .events-tab {
 	position: absolute;
 	width: 250px;
-	height: 120px;
+	height: 125px;
 	background-color: #E489A2;
 	box-shadow: 6px 6px 0px #000000;
 	left: 15px;
-	top: 80px;
+	top: 60px;
 }
 
 .events-tab p {
@@ -208,11 +214,11 @@ fieldset {
 .places-tab {
 	position: absolute;
 	width: 250px;
-	height: 120px;
+	height: 125px;
 	background-color: #FAF06B;
 	box-shadow: 6px 6px 0px #000000;
 	left: 15px;
-	top: 220px;
+	top: 205px;
 }
 
 .places-tab p {
@@ -228,11 +234,11 @@ fieldset {
 .connect-tab {
 	position: absolute;
 	width: 250px;
-	height: 120px;
+	height: 125px;
 	background-color: #8EBDF3;
 	box-shadow: 6px 6px 0px #000000;
 	left: 15px;
-	top: 360px;
+	top: 355px;
 }
 
 .connect-tab p {
@@ -255,7 +261,7 @@ fieldset {
 	background-color: #FAF06B;
 	box-shadow: 3px 3px 0px #000000;
 	left: 5px;
-	top: 70px;
+	top: 50px;
 }
 
 .events-nav p {
@@ -276,7 +282,7 @@ fieldset {
 	background-color: #E489A2;
 	box-shadow: 3px 3px 0px #000000;
 	left: 98px;
-	top: 70px;
+	top: 50px;
 }
 
 .places-nav p {
@@ -297,7 +303,7 @@ fieldset {
 	background-color: #E489A2;
 	box-shadow: 3px 3px 0px #000000;
 	left: 190px;
-	top: 70px;
+	top: 50px;
 }
 
 .connect-nav p {
@@ -316,14 +322,14 @@ fieldset {
 	font-size: 20px;
 	position: absolute;
 	left: 10px;
-	top: 95px;
+	top: 75px;
 }
 
 /*events overview scroll*/
 .events-scroll {
 	position: absolute;
 	left: 10px;
-	top: 150px;
+	top: 130px;
 	width: 265px;
 	height: 350px;
 	overflow-y: scroll;
@@ -344,6 +350,7 @@ h5 {
 	margin-top: 8px;
 	margin-left: 5px;
 	display: inline-block;
+	color: black;
 }
 
 .events-scroll .zadie p.time {
@@ -351,6 +358,7 @@ h5 {
 	font-size: 15px;
 	display: inline-block;
 	margin-left: 10px;
+	color: black;
 }
 
 .events-scroll .zadie p {
@@ -359,6 +367,7 @@ h5 {
 	margin: 0;
 	margin-top: -25px;
 	margin-left: 5px;
+	color: black;
 }
 
 /**********************************************************************/
@@ -371,7 +380,7 @@ h5 {
 	background-color: #FAF06B;
 	box-shadow: 3px 3px 0px #000000;
 	left: 5px;
-	top: 70px;
+	top: 50px;
 }
 
 .detail-events-nav p {
@@ -382,23 +391,95 @@ h5 {
 	text-decoration: none;
 	color: black;
 }
+/**********************************************************************/
 
 /*main div*/
 .main-map {
 	position: absolute;
 	left: 10px;
-	top: 120px;
+	top: 95px;
 }
 /*google maps*/
 iframe {
-	width: 260px;
+	width: 265px;
 	height: 100px;
 	border: 0;
 }
 
+/*location text*/
+.main-map p {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 14px;
+	margin: 0;
+	text-align: center;
+}
+
+/*open in google maps button?*/
+.google-maps-button {
+	width: 160px;
+	height: 30px;
+	background-color: #AB88D4;
+	box-shadow: 3px 3px 0px #000000;
+	position: absolute;
+	left: 50px;
+}
+
+.google-maps-button p {
+	color: white;
+	margin-top: 5px;
+}
+
+/**********************************************************************/
 /*main event bottom section*/
 .detail-event {
 	position: absolute;
-	left: 10px;
-	top: 300px;
+	top: 280px;
+}
+
+.zadie-info {
+	background-color: #F3F3F3;
+	margin-top: 0px;
+	height: 165px;
+	overflow: scroll;
+}
+
+.detail-title {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 18px;
+	text-align: center;
+	margin: 0;
+}
+
+.detail-date {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 14px;
+	text-align: center;
+	margin: 0;
+}
+
+.main-info {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 14px;
+	margin-top: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+/*contact button*/
+.contact-button {
+	width: 190px;
+	height: 40px;
+	background-color: #E489A2;
+	box-shadow: 3px 3px 0px #000000;
+	position: absolute;
+	left: 50px;
+	top: 170px;
+}
+
+.contact-button p {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	margin-top: 10px;
 }
