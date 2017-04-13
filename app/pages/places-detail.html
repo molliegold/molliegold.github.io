@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>	
+		<style>
+		.events-nav {
+				background-color: #E489A2;
+			}
+
+			.places-nav {
+				background-color: #FAF06B;
+			}
+
+			/*left info*/
+			.left-info {
+				width: 178px;
+				font-size: 14px;
+			}
+
+			.left-info p:first-child {
+				font-size: 20px;
+			}
+
+			/*star rating*/
+			.left-info p:nth-child(2){
+				color: #D3D2D3;
+				font-size: 16px;
+			}
+
+			.left-info p:nth-child(2) .fill{
+				color: #FAF06B;
+			}
+
+			.left-info p:nth-child(3) {
+				color: black;
+				font-size: 14px;
+			}
+
+			/*right info*/
+			.right-info {
+				font-size: 14px;
+				color: grey;
+				line-height: 20px;
+			}
+
+			.right-info p:first-child {
+				font-size: 14px;
+				color: grey;
+			}
+
+			.right-info p:nth-child(4){
+				color: #8EBDF3;
+			}
+
+			.address p {
+				font-size: 14px;
+				color: grey;
+			}
+
+			.done-button {
+				position: inherit;
+				width: 200px;
+				height: 40px;
+				margin-left: 30px;
+				margin-top: 10px;
+			}
+
+			.done-button p {
+				font-size: 16px;
+				padding-top: 8px;
+				padding-left: 5px;
+			}
+
+			.date {
+				margin-top: 400px;
+			}
+			</style>
+	</head>
+	<body>
+		<!--phone mockup-->
+		<div id="all">
+			<img src="../img/mockup.png"/>
+			<div id="screen">
+
+				<nav>
+					<!--events tab-->
+					<a href="events-overview.html">
+						<div class="events-nav">
+							<p>Events</p>
+						</div>
+					</a>
+					
+					<!--places tab-->
+					<a href="places-overview.html">
+						<div class="places-nav">
+							<p>Places</p>
+						</div>
+					</a>
+
+					<!--connect tab-->
+					<a href="connect-overview.html">
+						<div class="connect-nav">
+							<p>Connect</p>
+						</div>
+					</a>
+				</nav>
+
+
+				<main>
+					<div class="main-event">
+
+						<!--places detail title-->
+						<div class="places-title">
+							<div class="left-info">
+								<p><strong>Murray's Bagels</strong></p>
+
+								<p><span class="fill">★★★</span>★★</p>
+
+								<p>Bagels, Deli</p>
+
+								<p>Hours: 6:30am-8pm</p>
+							</div>
+
+							<div class="right-info">
+								<p>0.2mi</p>
+
+								<p>$</p>
+
+								<br>
+
+								<p>Open Now</p>
+							</div>
+
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.165152869882!2d-73.99948834929035!3d40.736391343958886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25997c91edec3%3A0xafa15c9bf0615120!2sMurray&#39;s+Bagels!5e0!3m2!1sen!2sus!4v1491765309713"></iframe>
+
+							<div class="whole-address">
+								<div class="address">
+									<p><em>500 6th Avenue</em></p>
+
+									<p><em>Between 12 and 13th Street</em></p>
+								</div>
+
+								<a href="">
+									<img src="../img/google.png">
+								</a>
+							</div>
+
+							<!--contact button-->
+							<a href="">
+								<div class="done-button">
+									<p>Contact: (212) 494-7201</p>
+								</div>
+							</a>
+
+							<!--REVIEWS-->
+							<p class="date"><strong>Reviews</strong></p>
+
+							<!--write your own review-->
+				<!--review box possible?-->
+							<div class="write-review">
+								<form action="/action_page.php">
+			  						<input type="text" name="search" placeholder="Start your review..." value="">
+								</form>
+							</div>
+
+							<!-- <div class="review-whole">
+								<div class="rating">
+									<span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+								</div>
+
+								<p>Start your review...</p>
+							</div> -->
+
+							<!--actual reviews-->
+							<div class="review" style="border:none">
+								<div class="avatar">
+								</div>
+								<div class="review-info">
+									<p>Nancy</p>
+									<p>Cooper Union</p>
+									<p>This place is amazing! Go here all the time before class.</p>
+								</div>
+							</div>
+
+							<!--actual reviews-->
+					<!--javascript for read more after certain point for review-->
+							<div class="review1">
+								<div class="avatar">
+								</div>
+								<div class="review-info">
+									<p>James</p>
+									<p>Vasser</p>
+									<p>Great place to get some New York bagels. Usually a long...</p>
+								</div>
+							</div>
+
+							<div class="james">
+								<p class="close">X</p>
+
+								<div class="james-info">
+									<p>James</p>
+									<p>Vasser</p>
+									<p>Great place to get some New York bagels. Usually a long line on the weekends though.</p>
+								</div>
+							</div>
+
+							<!--actual reviews-->
+							<div class="review"  style="margin-bottom:10px">
+								<div class="avatar">
+								</div>
+								<div class="review-info">
+									<p>Alex</p>
+									<p>Pratt</p>
+									<p>Great for food, not so great so studying.</p>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</main>
+
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<style>
+			.events-nav {
+				background-color: #E489A2;
+			}
+
+			.places-nav {
+				background-color: #E489A2;
+			}
+
+			.connect-nav {
+				background-color: #FAF06B;
+			}
+
+			.school-form {
+				margin-top: 0px;
+				margin-left: 0px;
+			}
+
+			select {
+				margin-left: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--phone mockup-->
+		<div id="all">
+			<img src="../img/mockup.png"/>
+			<div id="screen">
+
+				<nav>
+					<!--events tab-->
+					<a href="events-overview.html">
+						<div class="events-nav">
+							<p>Events</p>
+						</div>
+					</a>
+					
+					<!--people tab-->
+					<a href="places-overview.html">
+						<div class="places-nav">
+							<p>Places</p>
+						</div>
+					</a>
+
+					<!--connect tab-->
+					<div class="connect-nav">
+						<p>Connect</p>
+					</div>
+				</nav>
+
+				<main>
+					<!--date-->
+					<p class="date"><strong>Filter by...</strong></p>
+
+					<div class="events-scroll">
+						<!--indiv filter options-->
+						<div class="filter">
+							<p>Time</p>
+
+							<!-- Rounded switch -->
+							<div class="toggle">
+								<label class="switch">
+								  <input type="checkbox">
+								  <div class="slider-round"></div>
+								</label>
+							</div>
+						</div>
+
+						<!--indiv filter options-->
+						<div class="filter">
+							<p>Date</p>
+
+							<!-- Rounded switch -->
+							<div class="toggle">
+								<label class="switch">
+								  <input type="checkbox">
+								  <div class="slider-round"></div>
+								</label>
+							</div>
+						</div>
+
+						<!--indiv filter options-->
+						<div class="filter">
+							<p>Attraction</p>
+
+							<!-- Rounded switch -->
+							<!--why is it not aligning with text?-->
+							<div class="toggle">
+								<label class="switch">
+								  <input type="checkbox">
+								  <div class="slider-round"></div>
+								</label>
+							</div>
+						</div>
+
+						<!--indiv filter options-->
+						<div class="filter">
+							<p>Bar</p>
+
+							<!-- Rounded switch -->
+							<!--why is it not aligning with text?-->
+							<div class="toggle">
+								<label class="switch">
+								  <input type="checkbox">
+								  <div class="slider-round"></div>
+								</label>
+							</div>
+						</div>
+
+						<!--indiv filter options-->
+						<div class="filter">
+							<p>Restaurant</p>
+
+							<!-- Rounded switch -->
+							<!--why is it not aligning with text?-->
+							<div class="toggle">
+								<label class="switch">
+								  <input type="checkbox">
+								  <div class="slider-round"></div>
+								</label>
+							</div>
+						</div>
+
+						<!--PRICE DIV-->
+						<div class="price-distance">
+							<p>School</p>
+
+							<!--choose school + drop down-->
+							<div class="school-form">
+								<form class="school-drop">
+			 						<fieldset>
+										<!-- <label>Select your school</label> -->
+									 	<select id="school" name="school">
+									    	<option>Select school</option>
+									    	<option value="baruch">Baruch</option>
+									    	<option>Columbia</option>
+									    	<option>Hunter</option>
+									    	<option>FIT</option>
+									    	<option>LIM</option>
+									    	<option>The New School</option>
+									    	<option>NYU</option>
+									    	<option>Pratt</option>
+									    	<option>Vasser</option>
+									 	</select>
+									 </fieldset>
+								</form>
+							</div>
+
+						<!--done button-->
+						<a href="connect-overview.html">
+							<div class="done-button">
+								<p>DONE</p>
+							</div>
+						</a>
+
+					</div>
+				</main>
+
+			</div>
+		</div>
+	</body>
+</html>

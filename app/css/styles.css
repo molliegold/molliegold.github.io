@@ -92,12 +92,49 @@ h4 {
 	color: white;
 }
 
-.no-fb {
+.no-fb-text {
 	font-family: "Avenir Next", sans-serif;
 	font-size: 16px;
 	position: absolute;
 	left: 60px;
 	top: 330px;
+}
+
+.no-facebook {
+	display: none;
+	position: absolute;
+	left: 25px;
+	top: 190px;
+	width: 230px;
+	height: 250px;
+	background-color: #AB88D4;
+	box-shadow: 6px 6px 0px #000000;
+}
+
+.close {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 18px;
+	height: 15px;
+	color: white;
+	margin: 0;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.no-facebook p:nth-child(2){
+	font-family: "Avenir Next", sans-serif;
+	font-size: 70px;
+	color: white;
+	margin: 0;
+	padding-left: 25px;
+}
+
+.no-facebook p:nth-child(3){
+	font-family: "Avenir Next", sans-serif;
+	font-size: 16px;
+	color: white;
+	margin: 0;
+	padding: 5px 20px 0px 30px;
 }
 
 /**********************************************************************/
@@ -125,6 +162,7 @@ h4 {
 	left: 20px;
 	top: 235px;
 }
+
 input {
 	width: 230px;
 	height: 20px;
@@ -146,7 +184,7 @@ input[type=text]:focus {
     font-family: "Avenir Next", sans-serif;
 }
 
-input[type=password]:focus {
+.form input[type=password]:focus {
     border: 2px solid #AB88D4;
     font-size: 14px;
 }
@@ -157,16 +195,15 @@ input[type=password]:focus {
 	height: 60px;
 	background-color: #AB88D4;
 	box-shadow: 6px 6px 0px #000000;
-	position: absolute;
-	left: 60px;
-	top: 380px;
+	margin-left: 60px;
+	margin-top: 380px;
 }
 
 .log-button p {
 	font-family: "Helvetica", sans-serif;
 	font-size: 20px;
-	position: absolute;
-	left: 40px;
+	padding-left: 40px;
+	padding-top: 18px;
 	text-decoration: none;
 	color: white;
 }
@@ -174,20 +211,22 @@ input[type=password]:focus {
 /**********************************************************************/
 /*drop down choose school*/
 .school-form {
-	position: absolute;
-	top: 200px;
-	left: 10px;
+	margin-top: 200px;
 }
+
 fieldset {
-    border: 2px solid black;
+    border: none;
+    margin-left: 0;
 }
-/*label {
-    display: block;
-    margin: 30px 0 0 0;
+
+select {
+	width: 235px;
+	height: 40px;
+	font-family: "Avenir Next", sans-serif;
+	font-size: 16px;
+	background-color: white;
+	margin-left: 15px;
 }
-.overflow {
-    height: 200px;
-}*/
 
 /**********************************************************************/
 /*main menu tabs -- EVENTS*/
@@ -261,7 +300,7 @@ fieldset {
 	background-color: #FAF06B;
 	box-shadow: 3px 3px 0px #000000;
 	left: 5px;
-	top: 50px;
+	top: 10px;
 }
 
 .events-nav p {
@@ -282,7 +321,7 @@ fieldset {
 	background-color: #E489A2;
 	box-shadow: 3px 3px 0px #000000;
 	left: 98px;
-	top: 50px;
+	top: 10px;
 }
 
 .places-nav p {
@@ -303,7 +342,7 @@ fieldset {
 	background-color: #E489A2;
 	box-shadow: 3px 3px 0px #000000;
 	left: 190px;
-	top: 50px;
+	top: 10px;
 }
 
 .connect-nav p {
@@ -320,23 +359,20 @@ fieldset {
 .date {
 	font-family: "Helvetica", sans-serif;
 	font-size: 20px;
-	position: absolute;
-	left: 10px;
-	top: 75px;
+	margin-left: 10px;
+	margin-top: 60px;
 }
 
 /*events overview scroll*/
 .events-scroll {
 	position: absolute;
 	left: 10px;
-	top: 130px;
+	top: 100px;
 	width: 265px;
-	height: 350px;
+	height: 401px;
 	overflow-y: scroll;
-	/*scrollbar-base-color:#E489A2;
-	scrollbar-face-color: #E489A2;
-	scrollbar-track-color: #E489A2;*/
 }
+
 /*zadie*/
 .zadie {
 	display: block;
@@ -348,7 +384,6 @@ h5 {
 	font-family: "Avenir Next", sans-serif;
 	font-size: 18px;
 	margin-top: 8px;
-	margin-left: 5px;
 	display: inline-block;
 	color: black;
 }
@@ -357,7 +392,7 @@ h5 {
 	font-family: "Avenir Next", sans-serif;
 	font-size: 15px;
 	display: inline-block;
-	margin-left: 10px;
+	margin-left: 20px;
 	color: black;
 }
 
@@ -366,90 +401,30 @@ h5 {
 	font-size: 13px;
 	margin: 0;
 	margin-top: -25px;
-	margin-left: 5px;
 	color: black;
 }
 
-/**********************************************************************/
-/*events detail nav -- EVENTS*/
-
-.detail-events-nav {
-	position: absolute;
-	width: 270px;
-	height: 30px;
-	background-color: #FAF06B;
-	box-shadow: 3px 3px 0px #000000;
-	left: 5px;
-	top: 50px;
-}
-
-.detail-events-nav p {
-	font-family: "Avenir Next", sans-serif;
-	font-size: 16px;
-	text-align: center;
-	margin-top: 4px;
-	text-decoration: none;
-	color: black;
-}
 /**********************************************************************/
 
 /*main div*/
-.main-map {
+.main-event {
 	position: absolute;
 	left: 10px;
-	top: 95px;
-}
-/*google maps*/
-iframe {
-	width: 265px;
-	height: 100px;
-	border: 0;
-}
-
-/*location text*/
-.main-map p {
-	font-family: "Avenir Next", sans-serif;
-	font-size: 14px;
-	margin: 0;
-	text-align: center;
-}
-
-/*open in google maps button?*/
-.google-maps-button {
-	width: 160px;
-	height: 30px;
-	background-color: #AB88D4;
-	box-shadow: 3px 3px 0px #000000;
-	position: absolute;
-	left: 50px;
-}
-
-.google-maps-button p {
-	color: white;
-	margin-top: 5px;
-}
-
-/**********************************************************************/
-/*main event bottom section*/
-.detail-event {
-	position: absolute;
-	top: 280px;
-}
-
-.zadie-info {
-	background-color: #F3F3F3;
-	margin-top: 0px;
-	height: 165px;
+	top: 50px;
+	width: 263px;
+	height: 448px;
 	overflow: scroll;
 }
 
-.detail-title {
+/*title*/
+h6 {
 	font-family: "Avenir Next", sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 	text-align: center;
 	margin: 0;
 }
 
+/*date and time*/
 .detail-date {
 	font-family: "Avenir Next", sans-serif;
 	font-size: 14px;
@@ -457,23 +432,51 @@ iframe {
 	margin: 0;
 }
 
+/*google maps*/
+iframe {
+	width: 265px;
+	height: 210px;
+	border: 0;
+	margin-top: 5px;
+}
+
+/*address whole*/
+.address {
+	width: 220px;
+	display: inline-block;
+	margin-top: 12px;
+}
+
+/*location text*/
+.address p {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 16px;
+	margin: 0;
+}
+
+/*google maps icon*/
+.whole-address img {
+	width: 40px;
+	height: auto;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+/*main info paragraphs*/
 .main-info {
 	font-family: "Avenir Next", sans-serif;
 	font-size: 14px;
-	margin-top: 3px;
-	padding-left: 3px;
-	padding-right: 3px;
+	margin-top: 20px;
 }
 
 /*contact button*/
 .contact-button {
 	width: 190px;
 	height: 40px;
-	background-color: #E489A2;
+	background-color: #AB88D4;
 	box-shadow: 3px 3px 0px #000000;
-	position: absolute;
-	left: 50px;
-	top: 170px;
+	margin-left: 30px;
+	margin-bottom: 15px;
 }
 
 .contact-button p {
@@ -481,5 +484,415 @@ iframe {
 	font-size: 14px;
 	color: white;
 	text-align: center;
+	padding-top: 10px;
+}
+
+/**********************************************************************/
+/*search box and filter by div*/
+.search-filter {
+	position: absolute;
+	left: 10px;
+	top: 65px;
+	width: 260px;
+}
+
+.search-box {
+	float: left;
+}
+
+.search-box input{
+	width: 160px;
+	border: 2px solid #8EBDF3;
+}
+
+.search-box input[placeholder]{
+	text-align: center;
+}
+
+.search-box input[type=text]:focus {
+	border: 2px solid #8EBDF3;
+}
+
+/*filter*/
+.filter-by {
+	display: inline-block;
+	margin-top: 33px;
+	margin-left: 22px;
+	font-family: "Avenir Next", sans-serif;
+	font-size: 14px;
+	color: grey;
+}
+
+/*indiv location overview*/
+.location-spot {
+	border-top: 1px solid black;
+	height: 75px;
+}
+
+.left-info {
+	width: 180px;
+	display: inline-block;
+}
+
+.right-info {
+	width: 80px;
+	display: inline-block;
+}
+
+.right-info p{
+	text-align: right;
+}
+
+/*indiv location info*/
+.location-spot p {
+	font-family: "Avenir Next", sans-serif;
+	margin: 0;
+}
+
+/*left info*/
+.left-info p:first-child {
+	font-size: 18px;
+	color: black;
+}
+
+.left-info p:nth-child(2){
+	font-size: 15px;
+	color: grey;
+}
+
+/*star rating*/
+.left-info p:nth-child(3){
+	color: #D3D2D3;
+	font-size: 22px;
+}
+
+.left-info p:nth-child(3) .fill{
+	color: #FAF06B;
+}
+
+/*right info*/
+.right-info p:first-child {
+	color: black;
+	font-size: 18px;
+}
+
+.right-info p:nth-child(2){
+	font-size: 15px;
+	color: grey;
+}
+
+.right-info p:nth-child(3){
+	font-size: 15px;
+	color: grey;
+}
+
+/**********************************************************************/
+/*filter options*/
+.filter {
+	display: block;
+	height: 50px;
+	border-top: 1px solid black;
+	margin: 0;
+}
+
+.filter p {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 20px;
+	color: black;
+	width: 215px;
+	margin: 0;
+	padding-top: 10px;
+}
+
+/*price and distance options*/
+.price-distance {
+	display: block;
+	height: 100px;
+	border-top: 1px solid black;
+	margin: 0;
+}
+
+.price-distance p {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 20px;
 	margin-top: 10px;
+}
+/*toggle switch*/
+/*toggle switch shifting down and not aligning with text?*/
+.toggle {
+	position: inherit;
+	margin-left: 218px;
+	margin-top: -25px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 45px;
+	height: 27px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider-round {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: grey;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider-round:before {
+	position: absolute;
+	content: "";
+	height: 20px;
+ 	width: 20px;
+ 	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider-round {
+	background-color: #8EBDF3;
+}
+
+input:focus + .slider-round {
+	box-shadow: 0 0 1px #8EBDF3;
+}
+
+input:checked + .slider-round:before {
+	-webkit-transform: translateX(17px);
+	-ms-transform: translateX(17px);
+	transform: translateX(17px);
+}
+
+/* Rounded sliders */
+.slider-round {
+	border-radius: 34px;
+}
+
+.slider-round:before {
+	border-radius: 50%;
+}
+
+/*price & distance div*/
+.price {
+	width: 260px;
+	height: 50px;
+	margin-top: -10px;
+	border: 2px solid grey;
+}
+
+.money {
+	display: inline-block;
+	width: 63px;
+	border-right: 2px solid grey;
+}
+
+.money p {
+	margin: 0px;
+	font-family: "Avenir Next", sans-serif;
+	font-size: 14px;
+	height: 35px;
+	width: 63px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.money:hover {
+	background-color: #8EBDF3;
+}
+
+.money:hover p {
+	color: white;
+}
+
+/*$$$$*/
+.money1 {
+	display: inline-block;
+	width: 65px;
+}
+
+.money1 p {
+	margin: 0;
+	font-family: "Avenir Next", sans-serif;
+	font-size: 14px;
+	height: 35px;
+	width: 65px;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.money1:hover {
+	background-color: #8EBDF3;
+}
+
+.money1:hover p {
+	color: white;
+}
+
+/*done button*/
+.done-button {
+	width: 140px;
+	height: 50px;
+	background-color: #AB88D4;
+	box-shadow: 6px 6px 0px #000000;
+	margin-left: 60px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.done-button p {
+	font-family: "Helvetica", sans-serif;
+	font-size: 20px;
+	padding-left: 40px;
+	margin: 0;
+	padding-top: 15px;
+	text-decoration: none;
+	color: white;
+}
+
+/**********************************************************************/
+/*places detail title*/
+.places-title {
+	height: 95px;
+}
+
+.places-title p {
+	font-family: "Avenir Next", sans-serif;
+	margin: 0;
+}
+
+.review-whole {
+	border: 1px solid black;
+	height: 50px;
+}
+
+.rating span {
+	font-size: 14px;
+	color: #D3D2D3;
+}
+
+/**********************************************************************/
+/*write your own review*/
+/*negative margin??*/
+
+.write-review input {
+	width: 245px;
+	border: 1px solid black;
+	border-radius: 0;
+}
+
+/*actual review thread*/
+.review {
+	height: 80px;
+	width: 265px;
+	margin-top: 7px;
+	border-top: 1px solid black;
+}
+
+.review1 {
+	height: 80px;
+	width: 265px;
+	margin-top: 7px;
+	border-top: 1px solid black;
+}
+
+.avatar {
+	background-color: #D3D2D3;
+	height: 60px;
+	width: 60px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+/*top alignment with box? padding - margin?*/
+.review-info {
+	display: inline-block;
+	width: 200px;
+	margin-top: 0px;
+}
+
+.review-info p{
+	font-family: "Avenir Next", sans-serif;
+	font-size: 13px;
+	margin: 0;
+	color: black;
+	margin-top: 10px;
+	padding-left: 5px;
+}
+
+.review-info p:first-child {
+	width: 101px;
+	font-size: 16px;
+	display: inline-block;
+}
+
+.review-info p:nth-child(2) {
+	width: 90px;
+	color: grey;
+	display: inline-block;
+	text-align: right;
+	padding-left: 0px;
+}
+
+.review-info p:nth-child(3) {
+	margin-top: 0px;
+	width: 195px;
+}
+
+/*more review - james*/
+.james {
+	display: none;
+	position: absolute;
+	top: 515px;
+	width: 257px;
+	height: 155px;
+	background-color: #8EBDF3;
+	box-shadow: 6px 6px 0px #000000;
+}
+
+.close {
+	font-family: "Avenir Next", sans-serif;
+	font-size: 18px;
+	height: 15px;
+	color: white;
+	margin: 0;
+	padding-left: 5px;
+}
+
+.james-info {
+	width: 220px;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.james-info p{
+	font-family: "Avenir Next", sans-serif;
+	font-size: 16px;
+	margin: 0;
+	color: white;
+}
+
+.james-info p:first-child {
+	font-size: 18px;
+	color: black;
+	width: 160px;
+	display: inline-block;
+}
+
+.james-info p:nth-child(2) {
+	width: 50px;
+	text-align: right;
+	color: black;
+	display: inline-block;
 }

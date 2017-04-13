@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<script type="text/javascript" src="../js/jquery-3.2.0.min.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
+		<style>
+			.events-nav {
+				background-color: #E489A2;
+			}
+
+			.places-nav {
+				background-color: #FAF06B;
+			}
+		</style>
+	</head>
+	<body>
+		<!--phone mockup-->
+		<div id="all">
+			<img src="../img/mockup.png"/>
+			<div id="screen">
+
+				<nav>
+					<!--events tab-->
+					<a href="events-overview.html">
+						<div class="events-nav">
+							<p>Events</p>
+						</div>
+					</a>
+					
+					<!--people tab-->
+					<div class="places-nav">
+						<p>Places</p>
+					</div>
+
+					<!--connect tab-->
+					<a href="connect-overview.html">
+						<div class="connect-nav">
+							<p>Connect</p>
+						</div>
+					</a>
+				</nav>
+
+				<main>
+					<!--date-->
+					<p class="date"><strong>Filter by...</strong></p>
+
+					<div class="events-scroll">
+						<!--indiv filter options-->
+						<div class="filter">
+							<p>Delivery</p>
+
+							<!-- Rounded switch -->
+							<div class="toggle">
+								<label class="switch">
+								  <input type="checkbox">
+								  <div class="slider-round"></div>
+								</label>
+							</div>
+						</div>
+
+						<!--indiv filter options-->
+						<div class="filter">
+							<p>Pick Up</p>
+
+							<!-- Rounded switch -->
+							<div class="toggle">
+								<label class="switch">
+								  <input type="checkbox">
+								  <div class="slider-round"></div>
+								</label>
+							</div>
+						</div>
+
+						<!--indiv filter options-->
+						<div class="filter">
+							<p>Open Now</p>
+
+							<!-- Rounded switch -->
+							<!--why is it not aligning with text?-->
+							<div class="toggle">
+								<label class="switch">
+								  <input type="checkbox">
+								  <div class="slider-round"></div>
+								</label>
+							</div>
+						</div>
+
+						<!--PRICE DIV-->
+						<div class="price-distance">
+							<p>Price</p>
+
+							<!-- price box -->
+							<div class="price">
+								<span><div class="money">
+									<p>$</p>
+								</div></span><span><div class="money">
+									<p>$$</p>
+								</div></span><span><div class="money">
+									<p>$$$</p>
+								</div></span><span><div class="money1">
+									<p>$$$$</p>
+								</div></span>
+							</div>
+						</div>
+
+						<!--DISTANCE DIV-->
+						<div class="price-distance" style="border:none">
+							<p>Distance</p>
+
+							<!-- price box -->
+							<div class="price">
+								<span><div class="money">
+									<p>2 blocks</p>
+								</div></span><span><div class="money">
+									<p>6 blocks</p>
+								</div></span><span><div class="money">
+									<p>1 mile</p>
+								</div></span><span><div class="money1">
+									<p>5 miles</p>
+								</div></span>
+							</div>
+						</div>
+
+						<!--done button-->
+						<a href="places-overview.html">
+							<div class="done-button">
+								<p>DONE</p>
+							</div>
+						</a>
+
+					</div>
+				</main>
+
+			</div>
+		</div>
+	</body>
+</html>
