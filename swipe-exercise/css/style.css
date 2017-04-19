@@ -1,0 +1,31 @@
+#swipe {
+	width: 300px;
+	height: 500px;
+	margin: 100px auto;
+	background: grey;
+	cursor: pointer;
+}
+
+.first {
+	background-color: magenta;
+}
+
+.second {
+	background-color: yellow;
+}
+
+.third {
+	background-color: cyan;
+}
+
+.fourth {
+	background-color: green;
+}
+
+.fifth {
+	background-color: purple;
+}
+
+.sixth {
+	background-color: orange;
+}
