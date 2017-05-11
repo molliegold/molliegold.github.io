@@ -1,0 +1,137 @@
+html {
+	width: 1400px;
+}
+
+body {
+	background-color: #cccccc;
+}
+
+.paper {
+	background-color: white;
+	box-shadow: 0px 0px 10px grey;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 800px;
+	height: 900px;
+	word-wrap: break-word;
+}
+
+.container {
+	padding: 75px;
+	height: 670px;
+	overflow-y: hidden;
+}
+
+#cursor {
+	font-weight: 100;
+	color: black;
+	font-size: 34px;
+	animation: 1s blinker step-end infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
+/*words*/
+.written {
+	font-size: 30px;
+	line-height: 40px;
+	font-family: "Georgia";
+}
+
+/*nav bar at top*/
+.nav {
+	border: 2px solid black;
+	background-color: #cccccc;
+/*	height: 60px;*/
+	width: 440px;
+	margin: 20px auto;
+}
+
+/*margin*/
+.margins {
+	background-color: #cccccc;
+	border-left: 2px solid black;
+	display: inline-block;
+	width: 135px;
+	height: 60px;
+}
+
+.margin-left, .margin-center, .margin-right {
+	background-color: #cccccc;
+	display: inline-block;
+	width: 50px;
+	height: 40px;
+	margin: 9px 0px 7px 10px;
+}
+
+.margin-left:hover, .margin-center:hover, .margin-right:hover {
+	border: 1px solid black;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.margin-left img, .margin-center img, .margin-right img {
+	width: 35px;
+	height: 35px;
+	padding: 3px 0px 3px 7px;
+}
+
+/*classes for margins when clicked*/
+.margin-click {
+	border: 1px solid black;
+	border-radius: 3px;
+	background-color: #aeaeae;
+}
+
+/*font family & size */
+.font-fam {
+	display: inline-block;
+	background-color: #cccccc;
+	width: 160px;
+	height: 60px;
+	margin: 0;
+	border-right: 2px solid black;
+}
+
+.font-size {
+	background-color: #cccccc;
+	display: inline-block;
+	width: 100px;
+	height: 60px;
+}
+
+.font-fam p, .font-size p {
+	display: inline-block;
+	font-family: "Avenir Next";
+	font-size: 20px;
+	text-align: center;
+	width: 130px;
+	margin-left: 10px;
+	padding: 5px;
+}
+
+.font-size p {
+	width: 50px;
+	margin-left: 20px;
+}
+
+.font-size:hover, .font-fam:hover {
+	cursor: pointer;
+}
+
+.font-fam p:hover, .font-size p:hover {
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+/*classes for font/size when clicked*/
+.font-click {
+	border: 1px solid black;
+	border-radius: 3px;
+}
+
+
+

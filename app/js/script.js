@@ -8,16 +8,18 @@ $(document).ready(function() {
   });
 
   $('.review1').click(function(){
+    $('.mode').css('display','inherit');
     $('.james').css('display','inherit');
   });
 
   $('.close').click(function(){
   	$('.james').css('display','none');
+    $('.mode').css('display','none');
   });
 
-  // $('.price').click(function(){
-  // 	$('span').css('background-color','#8EBDF3');
-  // });
+  $('.first, .second, .third, .money1').click(function(){
+  	$(this).toggleClass('clicked');
+  });
 
 });
 
