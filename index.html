@@ -4,6 +4,13 @@
 		<title>Mollie Gold</title>
 		<link href="https://fonts.googleapis.com/css?family=Bevan|Open+Sans+Condensed:300" rel="stylesheet">
 		<style>
+
+			@font-face {
+				font-family: "edo-sz";
+				src: url('media/edosz.ttf');
+
+			}
+
 			#all {
 				width: 85%;
 				margin: auto;
@@ -55,16 +62,26 @@
 		</style>
 	</head>
 	<body>
-							
+
+		<noscript>
+		 <style type="text/css">
+		  body { display:none; }
+		 </style>
+		 <h3>Please enable javascript in your browser to view this site!</h3>
+		</noscript>
+		
+		<link href="//testwebsite.gopaywall.com/script/base.css" rel="stylesheet" type="text/css" media="all">
+		<script src="//testwebsite.gopaywall.com/script/script.js" type="text/javascript"></script>
+
 <!-- BEGIN SENTRY AJAX LOGIN FORM - "Flat and Fresh" version 1.0 (Beta Build D) - Member Login Code Copyright © Sentrylogin.com, Shawn, Co. https://www.sentrylogin.com --> 
 
-<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+<!-- <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
 <meta http-equiv="PRAGMA" content="NO-CACHE"> 
 <link rel="stylesheet" type="text/css" href="https://www.sentrylogin.com/sentry/scripts/CSS_flat.css"> 
 <script type="text/javascript" src="https://www.sentrylogin.com/sentry/scripts/Sentry_AJAX_Style2014.js">
 </script> 
 
-<div id="Settings" manner="NORMAL" showSignUp="YES" style="display:none;"></div>
+<div id="Settings" manner="NORMAL" showSignUp="YES" style="display:none;"></div> -->
 
 <!-- IT'S EASY TO MAKE CHANGES! 
 
@@ -78,9 +95,9 @@ We've deliberately put the styling directly in the tags here so you can easily c
 
 -->
 
-<span id="SentryTrigger" class="handCursor" onClick="SentryPopUp();" title="Click here to log in." style="color: Black; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 18px; font-weight: normal;"> Member Login <img src="https://www.sentrylogin.com/sentry/images/icon_loginDoor.png" align="absmiddle" alt="Member Login"> </span>
+<!-- <span id="SentryTrigger" class="handCursor" onClick="SentryPopUp();" title="Click here to log in." style="color: Black; font-family: 'edo-sz'; font-size: 22px; font-weight: normal; padding-left: 20px;"> Log In!</span>
 
-<span id="SentryHello" class="handCursor" style="color: Black; font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif; font-size: 14px; font-weight: normal; display: none;"> <span onClick="SentryPopUp(1);" title="Click to enter the member area, make changes to your membership, and more.">Hi, <span id="helloName">(First Name)</span> <img src="https://www.sentrylogin.com/sentry/images/icon_hamburger_black.png" align="absmiddle" alt="Member Area"></span> | <span onClick="LogOut();" style="padding-left: 3px;">Log Out</span> 
+<span id="SentryHello" class="handCursor" style="color: Black; font-family: 'edo-sz'; font-size: 18px; font-weight: normal; display: none;"> <span onClick="SentryPopUp(1);" title="Click to enter the member area, make changes to your membership, and more.">Hi, <span id="helloName">(First Name)</span> <img src="https://www.sentrylogin.com/sentry/images/icon_hamburger_black.png" align="absmiddle" alt="Member Area"></span> | <span onClick="LogOut();" style="padding-left: 3px;">Log Out</span> 
 
 </span> <div id="SentryOverlay">
 
@@ -100,19 +117,19 @@ We've deliberately put the styling directly in the tags here so you can easily c
 
 <div id="iconKey" style="background: none;"> </div>
 
-<div id="Title" style="color: #FFFFFF;font-family: Consolas, monaco, monospace;font-size: 22px;">Member Login</div> 
+<div id="Title" style="color: #FFFFFF;font-family: 'edo-sz';font-size: 30px;">Customize Me</div> 
 
-<div id="Welcome" style="color: #FFFFFF;font-family: Consolas, monaco, monospace;font-size: 22px;">Welcome, <span id="welcomeBarName">(First Name)</span>!</div> </div>
+<div id="Welcome" style="color: #FFFFFF;font-family: 'edo-sz';font-size: 30px;">Welcome, <span id="welcomeBarName">(First Name)</span>!</div> </div>
 
 <div id="SentryFormGroup"> <form name="Sentry_login_form" onSubmit="sentryLogin();">
 
-<div id="SentryInputGroup" style="height: 79px; width: 282px; border-radius: 7px; border-color: #FFFFFF;  background-color: #DCDCDC;">
+<div id="SentryInputGroup" style="height: 79px; width: 282px; border-radius: 7px; border-color: #FFFFFF;  background-color: #DCDCDC;"> 
 
-<div id="iconEmail"> </div> <input type="text" id="Sentry_email" onFocus="Sentry_onfocus(this.id);" onKeyDown="Sentry_onkeydown(event, this.id);" onKeyUp="Sentry_onkeyup(this.value, this.id, event);" onBlur="Sentry_onblur(this.value, this.id);" value="E-mail Address" tabindex="1" style="height: 38px; font-weight: normal;  border-top-right-radius: 6px;background-color: #F7F7F7;font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;font-size: 16px;color: #A0A0A0;">
+<input type="text" id="Sentry_email" onFocus="Sentry_onfocus(this.id);" onKeyDown="Sentry_onkeydown(event, this.id);" onKeyUp="Sentry_onkeyup(this.value, this.id, event);" onBlur="Sentry_onblur(this.value, this.id);" value="E-mail Address" tabindex="1" style="height: 38px; width: 282px; font-weight: normal;  border-top-right-radius: 6px;background-color: #F7F7F7;font-family: 'times', serif;font-size: 16px;color: #A0A0A0;">
 
 <hr class="clear" id="inputsSep" style=" background-color: #FFFFFF !important;  display: block;">
 
-<div id="iconPassword"> </div> <div id="iconShowPassword"> </div> <input type="text" id="Sentry_password" onFocus="Sentry_onfocus(this.id);" onKeyDown="Sentry_onkeydown(event, this.id);" onKeyUp="Sentry_onkeyup(this.value, this.id, event);" onBlur="Sentry_onblur(this.value, this.id);" value="Password" tabindex="2" style="height: 38px; font-weight: normal;  border-bottom-right-radius: 6px;background-color: #F7F7F7;font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;font-size: 16px;color: #A0A0A0;"> </div>
+<div id="iconShowPassword"> </div> <input type="text" id="Sentry_password" onFocus="Sentry_onfocus(this.id);" onKeyDown="Sentry_onkeydown(event, this.id);" onKeyUp="Sentry_onkeyup(this.value, this.id, event);" onBlur="Sentry_onblur(this.value, this.id);" value="Password" tabindex="2" style="height: 38px; width: 282px; font-weight: normal;  border-bottom-right-radius: 6px;background-color: #F7F7F7;font-family: 'times', serif;font-size: 16px;color: #A0A0A0;"> </div>
 
 <span id="forgotSpan" onClick="Sentry_onClick(this.id);" lnk="https://www.sentrylogin.com/sentry/sentry_remind_pw.asp?Sentry_ID=20447" tabindex="0" style="font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 13px; color: #6D6D6D;">Forgot?</span> 
 
@@ -120,7 +137,7 @@ We've deliberately put the styling directly in the tags here so you can easily c
 
 <input name="" type="checkbox" value="" id="psist" class="SentryCss-checkbox"><label id="psistLabel" for="psist" class="SentryCss-label" style="font-weight: normal; font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 13px;color: #606060; ">Stay Logged In</label></span>
 
-<div class="SentryLoginButton" id="Sentry_button" onClick="Sentry_onClick(this.id);" onKeyDown="Sentry_onkeydown(event, this.id);" onKeyUp="Sentry_onkeyup(this.value, this.id, event);" onblur="Sentry_onblur(this.value, this.id);" tabindex="4" style="border-radius: 2px;"><span id="lgnBtnText" style="font-family: Consolas, monaco, monospace;font-size: 20px;">Log In</span></div> 
+<div class="SentryLoginButton" id="Sentry_button" onClick="Sentry_onClick(this.id);" onKeyDown="Sentry_onkeydown(event, this.id);" onKeyUp="Sentry_onkeyup(this.value, this.id, event);" onblur="Sentry_onblur(this.value, this.id);" tabindex="4" style="border-radius: 2px;"><span id="lgnBtnText" style="font-family: 'edo-sz';font-size: 25px;">Log In</span></div> 
 </form> </div> 
 
 <style>
@@ -164,13 +181,11 @@ We've deliberately put the styling directly in the tags here so you can easily c
 
 <div id="SentryFooterBar">
 
-
-
-<div id="iconProfile"> </div><span id="myProfile" onClick="Sentry_onClick(this.id);" style="font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 16px;color: #000000;">My Profile</span>
+<span id="myProfile" onClick="Sentry_onClick(this.id);" style="font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 16px;color: #000000; padding-left: 80px;">My Profile</span>
 
 
 
-<span id="signUpLnk" onClick="Sentry_onClick(this.id);" style="font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 16px;color: #FF00C3;">Not a member? Sign up.</span>
+<span id="signUpLnk" onClick="Sentry_onClick(this.id);" style="font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 14px;color: #FF00C3; padding-left: 120px;">Sign up</span>
 
 <span id="txtLogOut" onClick="LogOut();" style="font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 16px;color: #000000;">Log Out</span><div id="xout" onClick="Sentry_onClick(this.id);" title="Close"> </div> </div> </div> </div> 
 
@@ -180,7 +195,7 @@ We've deliberately put the styling directly in the tags here so you can easily c
 
 <input id="univ" type="hidden" value="1">
  
-<script> initializeSentry(); </script>
+<script> initializeSentry(); </script>-->
 
 <!-- END SENTRY AJAX LOGIN FORM --> 
   
