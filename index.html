@@ -69,150 +69,22 @@
 		</noscript>
 		<link href="//testwebsite.gopaywall.com/script/base.css" rel="stylesheet" type="text/css" media="all">
 		<script src="//testwebsite.gopaywall.com/script/script.js" type="text/javascript"></script>
-<!-- 
+
 		<script>
 		redirect_to = 'https://www.molliegold.github.io';
 		gopaywall_passwordprotect(redirect_to);
 		</script>
 
-		<script>
-		memberships_allowed = '10,9';
-		redirect_to = 'https://www.molliegold.github.io';
-		gopaywall_memberprotect(memberships_allowed,redirect_to);
-		</script>
- -->
+		// <script>
+		// memberships_allowed = '10,9';
+		// redirect_to = 'https://www.molliegold.github.io';
+		// gopaywall_memberprotect(memberships_allowed,redirect_to);
+		// </script>
+
+
 	</head>
 	<body>
-<!--sentry login customization-->
-
-<!-- BEGIN SENTRY AJAX LOGIN FORM - "Flat and Fresh" version 1.0 (Beta Build D) - Member Login Code Copyright © Sentrylogin.com, Shawn, Co. https://www.sentrylogin.com --> 
-
-<!-- <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
-<meta http-equiv="PRAGMA" content="NO-CACHE"> 
-<link rel="stylesheet" type="text/css" href="https://www.sentrylogin.com/sentry/scripts/CSS_flat.css"> 
-<script type="text/javascript" src="https://www.sentrylogin.com/sentry/scripts/Sentry_AJAX_Style2014.js">
-</script> 
-
-<div id="Settings" manner="NORMAL" showSignUp="YES" style="display:none;"></div> -->
-
-<!-- IT'S EASY TO MAKE CHANGES! 
-
-We've added the text "Member Login" but you can use any wording. You can also use different images by changing "src" in the img tags to bring in your own, or NO image just by deleting the whole <img> tag.
-
-If your site is dark and you'd prefer white icons, just replace the img "icon_loginDoor.png" with "icon_loginDoor_white.png" and the img "icon_hamburger_black.png" with "icon_hamburger_white.png"
-
-Also, if your site is dark, be sure to change the text color in the spans "SentryTrigger" and "SentryHello" by changing "color: Black;" to "color: White;" (or any light color).
-
-We've deliberately put the styling directly in the tags here so you can easily change fonts, colors, sizes, etc., or just remove the "style" attribute and allow your web page to apply its style automatically.
-
--->
-
-<!-- <span id="SentryTrigger" class="handCursor" onClick="SentryPopUp();" title="Click here to log in." style="color: Black; font-family: 'edo-sz'; font-size: 22px; font-weight: normal; padding-left: 20px;"> Log In!</span>
-
-<span id="SentryHello" class="handCursor" style="color: Black; font-family: 'edo-sz'; font-size: 18px; font-weight: normal; display: none;"> <span onClick="SentryPopUp(1);" title="Click to enter the member area, make changes to your membership, and more.">Hi, <span id="helloName">(First Name)</span> <img src="https://www.sentrylogin.com/sentry/images/icon_hamburger_black.png" align="absmiddle" alt="Member Area"></span> | <span onClick="LogOut();" style="padding-left: 3px;">Log Out</span> 
-
-</span> <div id="SentryOverlay">
-
-
-	<style>
-		.after::before, .after::after{
-			display: none;
-		}
-	</style>
-
-
-<div id="SentryOutermost" class="before">
-
-<div id="SentryLoginBox" style="background-color: #EDEDED;border-radius: 15px;">
-
-<div id="SentryTitleBar" style="background-color: #FF00C3;border-top-left-radius: 15px; border-top-right-radius: 15px;">
-
-<div id="iconKey" style="background: none;"> </div>
-
-<div id="Title" style="color: #FFFFFF;font-family: 'edo-sz';font-size: 30px;">Customize Me</div> 
-
-<div id="Welcome" style="color: #FFFFFF;font-family: 'edo-sz';font-size: 30px;">Welcome, <span id="welcomeBarName">(First Name)</span>!</div> </div>
-
-<div id="SentryFormGroup"> <form name="Sentry_login_form" onSubmit="sentryLogin();">
-
-<div id="SentryInputGroup" style="height: 79px; width: 282px; border-radius: 7px; border-color: #FFFFFF;  background-color: #DCDCDC;"> 
-
-<input type="text" id="Sentry_email" onFocus="Sentry_onfocus(this.id);" onKeyDown="Sentry_onkeydown(event, this.id);" onKeyUp="Sentry_onkeyup(this.value, this.id, event);" onBlur="Sentry_onblur(this.value, this.id);" value="E-mail Address" tabindex="1" style="height: 38px; width: 282px; font-weight: normal;  border-top-right-radius: 6px;background-color: #F7F7F7;font-family: 'times', serif;font-size: 16px;color: #A0A0A0;">
-
-<hr class="clear" id="inputsSep" style=" background-color: #FFFFFF !important;  display: block;">
-
-<div id="iconShowPassword"> </div> <input type="text" id="Sentry_password" onFocus="Sentry_onfocus(this.id);" onKeyDown="Sentry_onkeydown(event, this.id);" onKeyUp="Sentry_onkeyup(this.value, this.id, event);" onBlur="Sentry_onblur(this.value, this.id);" value="Password" tabindex="2" style="height: 38px; width: 282px; font-weight: normal;  border-bottom-right-radius: 6px;background-color: #F7F7F7;font-family: 'times', serif;font-size: 16px;color: #A0A0A0;"> </div>
-
-<span id="forgotSpan" onClick="Sentry_onClick(this.id);" lnk="https://www.sentrylogin.com/sentry/sentry_remind_pw.asp?Sentry_ID=20447" tabindex="0" style="font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 13px; color: #6D6D6D;">Forgot?</span> 
-
-<input type="checkbox" id="unHide" style="height:0px; width:0px; margin:0px; display: none;" value="1"><span id="unHideSpan" onClick="Sentry_onClick(this.id);" class="handCursor" title="Do not reveal password in public" tabindex="0" style="font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 13px;color: #727272; ">Show</span> <span id="Stay" onKeyDown="Sentry_onkeydown(event, this.id);" onKeyUp="Sentry_onkeyup(this.value, this.id, event);" tabindex="3">
-
-<input name="" type="checkbox" value="" id="psist" class="SentryCss-checkbox"><label id="psistLabel" for="psist" class="SentryCss-label" style="font-weight: normal; font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 13px;color: #606060; ">Stay Logged In</label></span>
-
-<div class="SentryLoginButton" id="Sentry_button" onClick="Sentry_onClick(this.id);" onKeyDown="Sentry_onkeydown(event, this.id);" onKeyUp="Sentry_onkeyup(this.value, this.id, event);" onblur="Sentry_onblur(this.value, this.id);" tabindex="4" style="border-radius: 2px;"><span id="lgnBtnText" style="font-family: 'edo-sz';font-size: 25px;">Log In</span></div> 
-</form> </div> 
-
-<style>
- .SentryLoginButton {
-
-	background-color: #FF00C7;
-
-	color: #FFFFFF;
-	
- }
- .SentryLoginButton:hover {
-
-   	background-color: #FF00D8;
-
-   	color: #FFFFFF;
-
-}
-</style>
-
-<div id="SentryHelloGroup">
-
-
-	<style>
-	 #EnterMember {
-			background: none;
-			padding-top: 49px;
-	}
-	</style>
-
-
-<div id="EnterMember" onClick="Sentry_onClick(this.id);" style="font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 16px;color: #000000; ">Enter Member Area</div>
-
-
-
-<div id="messages" style="display: none; font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 16px;color: #000000; "> <span id="msgSpan">(Message automatically replaces this text)</span>
-
-<div class="SentryLoginButton" id="msgOkBtn" onClick="Sentry_onClick(this.id);" onKeyDown="Sentry_onkeydown(event, this.id);" onKeyUp="Sentry_onkeyup(this.value, this.id, event);" tabindex="4" style="border-radius: 2px;"><span id="msgOkBtnText" style="font-family: Consolas, monaco, monospace;font-size: 20px;">OK</span></div> 
-</div>
-
-<div id="wobbler"> </div> </div>
-
-<div id="SentryFooterBar">
-
-<span id="myProfile" onClick="Sentry_onClick(this.id);" style="font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 16px;color: #000000; padding-left: 80px;">My Profile</span>
-
-
-
-<span id="signUpLnk" onClick="Sentry_onClick(this.id);" style="font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 14px;color: #FF00C3; padding-left: 120px;">Sign up</span>
-
-<span id="txtLogOut" onClick="LogOut();" style="font-family: Tahoma, Geneva, Arial, sans-serif;font-size: 16px;color: #000000;">Log Out</span><div id="xout" onClick="Sentry_onClick(this.id);" title="Close"> </div> </div> </div> </div> 
-
-</div> 
-
-<input id="Sentry_ID" type="hidden" value="20447"> 
-
-<input id="univ" type="hidden" value="1">
- 
-<script> initializeSentry(); </script>-->
-
-<!-- END SENTRY AJAX LOGIN FORM --> 
-  
-  
-		<div id="all">
+  		<div id="all">
 
 			<!--ex.1-->
 			<div class="drop">
