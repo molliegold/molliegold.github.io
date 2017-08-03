@@ -1,159 +1,117 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Mollie Gold</title>
-		<link href="https://fonts.googleapis.com/css?family=Bevan|Open+Sans+Condensed:300" rel="stylesheet">
-		<style>
-
-			@font-face {
-				font-family: "edo-sz";
-				src: url('media/edosz.ttf');
-
-			}
-
-			#all {
-				width: 85%;
-				margin: auto;
-			}
-
-			.dropContent {
-				display: none;
-				width: 230px;
-				height: 230px;
-				border: 2px solid black;
-				font-family: 'Open Sans Condensed', sans-serif;
-				font-size: 22px;
-				padding-left: 0.5em;
-				padding-right: 0.5em;
-				position: absolute;
-				margin-left: 50px;
-				background-color: #bebcff;
-				animation-duration: 6s;
-				animation-name: example;
-			}
-
-			.drop {
-				font-family: 'Bevan', cursive;
-				font-size: 34px;
-				display: inline-block;
-				width: 350px;
-				height: 200px;
-				text-align: center;
-			}
-
-			.drop:hover .dropContent{
-				display: block;
-			}
-
-			.drop:hover a {
-				color: black;
-			}
-
-			a {
-				color: #ff2bb6;
-			}
-
-			 @keyframes example {
-			 	0% {background-color: #bebcff;}
-			 	40% {background-color: #ffbcbc;}
-			 	80% {background-color: #fbffbc;}
-			 	100% {background-color: #bebcff;}
-			 }
-		</style>
-
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Hello World</title>
+		
+		<link rel="stylesheet" type="text/css" href="portfolio/css/styles.css">
+		<script type="text/javascript" src="portfolio/js/jquery-3.2.0.min.js"></script>
+		<script type="text/javascript" src="portfolio/js/js.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Catamaran:100" rel="stylesheet">
 	</head>
 	<body>
-  		<div id="all">
-
-			<!--ex.1-->
-			<div class="drop">
-				<p><a href="exercise-1/index.html">exercise one</a></p>
-					<div class="dropContent">
-						<p><em>Prompt:</em>
-							<br>Create a simple web experience that triggers emotions from the viewer, only using HTML.</p>
-					</div>
-			</div>
-
-			<!--ex.2-->
-			<div class="drop">
-				<p><a href="exercise-2/index.html">exercise two</a></p>
-					<div class="dropContent">
-						<p><em>Prompt:</em>
-							<br>Choose a Wikipedia article and alter the look of the page to reflect the subject by overriding their default CSS.</p>
-					</div>
-			</div>
-
-			<!--ex.3-->
-			<div class="drop">
-				<p><a href="exercise-3/index.html">exercise three</a></p>
-					<div class="dropContent">
-						<p><em>Prompt:</em>
-							<br>Redesign your Wikipedia article with jQuery.</p>
-					</div>
-			</div>
-
-			<!--app-->
-			<div class="drop">
-				<p><a href="app/index.html">App Prototype</a></p>
-					<div class="dropContent">
-						<p><em>Description:</em>
-							<br>Promopt: Create an in-browser prototype of an app idea.</p>
-					</div>
-				</div>
-
-			<!--final-->
-			<div class="drop">
-				<p><a href="final/index.html">Final Project</a></p>
-					<div class="dropContent">
-						<p><em>Prompt:</em>
-							<br>Create a website that showcases a collection of some sort.</p>
-					</div>
-			</div>
-
-			<!--data vis map-->
-			<div class="drop">
-				<p><a href="datavis/pp-map.html">Fusion Table</a></p>
-					<div class="dropContent">
-						<p><em></em>
-							<br></p>
-					</div>
-			</div>
-
-			<!--ex.4-->
-			<!-- <div class="drop">
-				<p><a href="exercise-4/index.html">exercise four</a></p>
-					<div class="dropContent">
-						<p><em>Description:</em>
-							<br>Webpage using skills learned.</p>
-					</div>
-			</div> -->
-
-			<!--ex.5-->
-			<!-- <div class="drop">
-				<p><a href="exercise-5/index.html">exercise five</a></p>
-					<div class="dropContent">
-						<p><em>Description:</em>
-							<br>Webpage using skills learned.</p>
-					</div>
-			</div> -->
-
-			<!--ex.6-->
-			<!-- <div class="drop">
-				<p><a href="exercise-6/index.html">exercise six</a></p>
-					<div class="dropContent">
-						<p><em>Description:</em>
-							<br>Webpage practicing hover effects.</p>
-					</div>
-			</div> -->
-
-			<!--ex.7-->
-			<!-- <div class="drop">
-				<p><a href="exercise-7/index.html">exercise seven</a></p>
-					<div class="dropContent">
-						<p><em>Description:</em>
-							<br>A collection of inspiring quotes. *Fully responsive.</p>
-					</div>
-			</div> -->
+		<div class="body-overlay">
 		</div>
+
+		<header>
+			<h1><span>hello,</span> <span>i'm</span> <span>mollie</span></h1>
+			<h2><span>what's</span> <span>what</span></h2>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li class="overlay">INDEX</li>
+				<li><a href="misc/index.html">MISC</a></li>
+				<li><a href="about/index.html">ABOUT</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<section>
+				<a href="final/index.html" target="_blank"><div class="outline 01"><img id ="un" src="portfolio/img/001.png" alt="01" title="One">
+				<img id ="one" src="portfolio/img/01.png" alt="01" title="One">
+				</div></a>
+				<a href="app/index.html" target="_blank"><div class="outline 02"><img id="deux" src="portfolio/img/002.png" alt="02" title="Two">
+				<img id ="two" src="portfolio/img/02.png" alt="01" title="Two">
+				</div></a>
+				<a href="splash/index.html" target="_blank"><div class="outline 03"><img id="trois" src="portfolio/img/003.png" alt="03" title="Three">
+				<img id ="three" src="portfolio/img/03.png" alt="01" title="Three">
+				</div></a>
+				<a href="wiki-css/index.html" target="_blank"><div class="outline 04"><img id="quatre" src="portfolio/img/004.png" alt="04" title="Four">
+				<img id ="four" src="portfolio/img/04.png" alt="01" title="Four">
+				</div></a>
+				<a href="current-loves/index.html" target="_blank"><div class="outline 05"><img id="cinq" src="portfolio/img/005.png" alt="05" title="Five">
+				<img id ="five" src="portfolio/img/05.png" alt="01" title="Five">
+				</div></a>
+				<a href="travel/index.html" target="_blank"><div class="outline 06"><img id="sixe" src="portfolio/img/006.png" alt="06" title="Six">
+				<img id ="six" src="portfolio/img/06.png" alt="01" title="Six">
+				</div></a>
+				<a href="#" target="_blank"><div class="outline 07"><img id="sept" src="portfolio/img/007.png" alt="07" title="Seven">
+				<img id ="seven" src="portfolio/img/07.png" alt="01" title="Seven">
+				</div></a>
+				<a href="http://missionmagazinesubscriptions.org" target="_blank"><div class="outline 08"><img id="huit" src="portfolio/img/008.png" alt="08" title="Eight">
+				<img id ="eight" src="portfolio/img/08.png" alt="01" title="Eight">
+				</div></a>
+			</section>
+
+			<table>
+				<tr>
+					<td class="project"><a href="final/index.html" target="_blank">01</a></td>
+					<td class="prompt">A tool for fun or writer's block: press keys to create something completely unique. Inspired by Google Docs and <em><a class="pat" href="http://patatap.com" target="_blank">Patatap</a></em>. </td>
+				</tr>
+				<tr>
+					<td class="project"><a href="app/index.html" target="_blank">02</a></td>
+					<td class="prompt">An interactive prototype idea for a new app that allows college students in the NYC area to connect, meet up, or go out.</td>
+				</tr>
+				<tr>
+					<td class="project"><a href="splash/index.html" target="_blank">03</a></td>
+					<td class="prompt">A collection of inspiring quotes featuring a splash page. Fully responsive.</td>
+				</tr>
+				<tr>
+					<td class="project"><a href="wiki-css/index.html" target="_blank">04</a></td>
+					<td class="prompt">Prompt: Redesign a Wikipedia page using CSS and Jquery. Original page <em><a class="pat" href="https://en.wikipedia.org/wiki/Lavender_(color)">here</a></em>.</td>
+				</tr>
+				<tr>
+					<td class="project"><a href="current-loves/index.html" target="_blank">05</a></td>
+					<td class="prompt">A collection of all the things I am currently loving, primarily music and art.</td>
+				</tr>
+				<tr>
+					<td class="project"><a href="travel/index.html" target="_blank">06</a></td>
+					<td class="prompt">An interactive travel index of places I've been to in the past couple years.</td>
+				</tr>
+				<tr>
+					<td class="project"><a href="" target="_blank">07</a></td>
+					<td class="prompt">PROMPT</td>
+				</tr>
+				<tr>
+					<td class="project"><a href="http://missionmagazinesubscriptions.org" target="_blank">08</a></td>
+					<td class="prompt">Web developer on <em><a class="pat" href="http://missionmag.org">Mission Magazine's</a></em> first issue, completely digital and mobile optimized.</td>
+				</tr>
+			</table>
+		</main>
+
+		<script>
+		$(document).ready(function(){
+			$('table').hide();
+			$('.body-overlay').hide();
+			$('h2').hide();
+			$('h1').show();
+
+			$('.overlay').click(function(){
+				$('body').toggleClass('body-overlay');
+
+				$('table').fadeToggle();
+				$('section').fadeToggle();
+				$('h1').toggle();
+				$('h2').toggle();
+				$('nav').toggleClass('tog-op');
+				$('.overlay').toggleClass('white');
+
+				console.log('you are showing the index');
+			});
+
+		});
+		</script>
 	</body>
 </html>

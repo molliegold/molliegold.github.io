@@ -1,0 +1,50 @@
+@font-face {
+    font-family: babyFox;
+    src: url(../font/baby-fox.otf);
+}
+
+h1 {
+	font-family: 'babyFox';
+	font-size: 90px;
+	letter-spacing: 4px;
+	height: 80px;
+	width: 20%;
+	margin: auto;
+	padding-bottom: 40px;
+	border-bottom: 1px dashed black;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul {
+	margin: auto;
+	width: 60%;
+}
+
+li {
+	text-decoration: none;
+	list-style-type: none;
+	display: inline;
+	font-family: 'babyFox';
+	font-size: 40px;
+	margin-left: 30px;
+	color: black;
+}
+
+li:hover {
+	font-size: 45px;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 300px;
+	height: auto;
+	margin-left: 30px;
+	margin-top: 5%
+}

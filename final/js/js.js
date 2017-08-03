@@ -13,31 +13,30 @@ $(document).ready(function(){
     var sizeIndex = 0;
 
   // set up array to loop pronouns
-    var pronouns = ["I ", "you ", "we ", "me ", "they ", "she ", "it ", "he ", "him ", "her ", "their ", "them "];
+    var pronouns = [ "I ", "you ", "we ", "me ", "they ", "she ", "it ", "he ", "him ", "her ", "their ", "them "];
     var pronounIndex = 0;
 
   // set up array to loop helping verbs
-    var helping = ["are ", "is ", "be ", "was ", "am ", "being ", "were "]
+    var helping = [ "are ", "is ", "be ", "was ", "am ", "being ", "were "]
     var helpingIndex = 0;
 
   // set up array to loop helping verbs
-    var verbs = ["jump ", "run ", "touch ", "feel ", "kiss ", "blush ", "talk ", "walk ", "poke ", "laugh ", "cry ", "cuddle ", "spoon ", "lick "]
+    var verbs = [ "jump ", "run ", "touch ", "feel ", "kiss ", "blush ", "talk ", "walk ", "poke ", "laugh ", "cry ", "cuddle ", "spoon ", "lick "]
     var verbsIndex = 0;
 
   // set up array to loop helping verbs
-    var colorWords = ["tangerine ", "periwinkle ", "lavender ", "sienna ", "rust ", "amber ", "coffee ", "red ", "yellow ", "orange ", "blue ", "green", "pink ", "purple", "black", "white", "grey"]
+    var colorWords = [ "tangerine ", "periwinkle ", "lavender ", "sienna ", "rust ", "amber ", "coffee ", "red ", "yellow ", "orange ", "blue ", "green", "pink ", "purple ", "black ", "white ", "grey "]
     var colorWordsIndex = 0;
 
-
   // set up array to loop helping verbs
-    var emotions = ["sad ", "happy ", "joy ", "confusion ", "contempt ", "mad ", "angry "]
+    var emotions = [ "sad ", "happy ", "joy ", "confusion ", "contempt ", "mad ", "angry "]
     var emotionsIndex = 0;
 
   // set up array to loop helping verbs
-    var nouns = ["clouds ", "water ", "ocean ", "floor ", "stars ", "universe ", "shackles ", "bear ", "dog ", "baby ", "match ", "rocks ", "monkey ", "hot ", "cold ", "tears "]
+    var nouns = [ "clouds ", "water ", "ocean ", "floor ", "stars ", "universe ", "shackles ", "bear ", "dog ", "baby ", "match ", "rocks ", "monkey ", "hot ", "cold ", "tears "]
     var nounsIndex = 0;
 
-  $(document).keypress(function(e){
+  $(document).keydown(function(e){
     // prevent default keypress actions
     event.preventDefault();
 
@@ -253,7 +252,7 @@ $(document).ready(function(){
     }
 
     //if pressed key is a #1 (backspace (delete) || x == 8/'127')
-    if (x == '49'){
+    if (x == '8' || x == '127'){
       $(".written").last().remove();
       console.log("you pressed delete");
     }
@@ -272,12 +271,6 @@ $(document).ready(function(){
     $('.container').css('padding','75px 200px 75px 200px');
     $('.margin-left').removeClass('margin-click');
   })
-
-  //margin right
-  // $('.margin-right').click(function() {
-  //   $(this).toggleClass('margin-click')
-  //   $('.container').css('padding','75px 75px 75px 200px');
-  // })
 
   //change font family
   $('.font-fam').click(function() {

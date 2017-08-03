@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="../portfolio/js/jquery-3.2.0.min.js"></script>
+	<script type="text/javascript" src="../portfolio/js/js.js"></script>
+
+	<title>Travel Log</title>
+</head>
+<body>
+	<header>
+		<div id="back"><p><a href="../index.html"><i>back</i></a></p></div>
+		<a href="index.html"><h1>TRAVEL LOG</h1></a>
+	</header>
+
+	<!-- <nav>
+		<ul>
+			<li><a href="pages/nyc.html">NYC</a></li>
+			<li><a href="pages/seattle.html">SEATTLE</a></li>
+			<li><a href="pages/brighton.html">BRIGHTON</a></li>
+			<li><a href="pages/paris.html">PARIS</a></li>
+			<li><a href="pages/london.html">LONDON</a></li>
+			<li><a href="pages/copenhagen.html">COPENHAGEN</a></li>
+			<li><a href="pages/cancun.html">CANCUN</a></li>
+			<li><a href="pages/spain.html">MADRID</a></li>			
+		</ul>
+	</nav> -->
+
+	<main>
+		<img id="world" src='img/map-outline1.png'>
+		<img class="pin canada" src="img/pin.png">
+		<img class="pin east" src="img/pin.png">
+		<img class="pin west" src="img/pin.png">
+		<img class="pin mexico" src="img/pin.png">
+		<img class="pin uk" src="img/pin.png">
+		<img class="pin france" src="img/pin.png">
+		<img class="pin spain" src="img/pin.png">
+		<img class="pin daneland" src="img/pin.png">
+
+		<img id="beast-coast" src="img/us-map.png">
+		<img class="east-coast-pins new-york" src="img/pin.png">
+		<img class="east-coast-pins philly" src="img/pin.png">
+		<img class="east-coast-pins niagara" src="img/pin.png">
+		<img class="east-coast-pins toronto" src="img/pin.png">
+		<img class="east-coast-pins montreal" src="img/pin.png">
+
+		<img class="nyc-map" src="img/nyc-map.png">
+
+		<img class="nyc-photos" src="img/cityscape.jpg">
+		<img class="nyc-photos" src="img/cp.jpg">
+		<img class="nyc-photos" src="img/lights.jpg">
+		<img class="nyc-photos" src="img/second.jpg">
+
+	</main>
+
+	<script>
+	$(document).ready(function() {
+		$('.east').click(function(){
+			$(this).fadeOut();
+			$('#world').fadeOut();
+			$('.pin').fadeOut();
+			$('#beast-coast').fadeIn();
+			$('.east-coast-pins').fadeIn();
+			});
+
+		$('.new-york').click(function() {
+			$(this).fadeOut();
+			$(this).css('display','inline-block');
+			$('#beast-coast').fadeOut();
+			$('.east-coast-pins').fadeOut();
+			$('.nyc-map').fadeIn();
+			$('.nyc-photos').fadeIn();
+			$('.nyc-photos').css('display','inline-block');
+		});
+
+
+
+	});
+	</script>
+</body>
+</html>

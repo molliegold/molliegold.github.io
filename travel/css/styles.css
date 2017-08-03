@@ -1,0 +1,170 @@
+@font-face {
+    font-family: babyFox;
+    src: url(../font/baby-fox.otf);
+}
+
+body {
+	color: black;
+	background-color: #00416b;
+}
+
+#back {
+	size: 14px;
+	position: absolute;
+	width: 50px;
+	text-align: center;
+	top: 0;
+	color: white;
+	left: 7%;
+	height: 40px;
+}
+
+h1 {
+	font-family: 'babyFox';
+	font-size: 90px;
+	letter-spacing: 4px;
+	height: 80px;
+	width: 20%;
+	margin: auto;
+	color: white;
+	padding-bottom: 30px;
+}
+
+li {
+	text-decoration: none;
+	list-style-type: none;
+	width: 96%;
+	font-family: "babyFox";
+	font-size: 45px;
+	text-align: center;
+	color: black;
+}
+
+li:hover {
+	font-size: 50px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: white;
+}
+
+main img {
+	height: 580px;
+	width: auto;
+	margin-top: 10px;
+	margin-left: 12%;
+	position: absolute;
+	z-index: 1;
+}
+
+.pin {
+	height: 35px;
+	width: auto;
+	position: absolute;
+	z-index: 2;
+}
+
+.pin:hover {
+	height: 40px;
+	width: auto;
+}
+
+.east {
+	margin-top: 200px;
+	margin-left: 450px;
+}
+
+.canada {
+	margin-top: 185px;
+	margin-left: 440px;
+}
+
+.west{
+	margin-top: 180px;
+	margin-left: 320px;
+}
+
+.mexico{
+	margin-top: 270px;
+	margin-left: 415px;
+}
+
+.uk{
+	margin-top: 150px;
+	margin-left: 665px;
+}
+
+.france{
+	margin-top: 175px;
+	margin-left: 670px;
+}
+
+.spain{
+	margin-top: 200px;
+	margin-left: 655px;
+}
+
+.daneland{
+	margin-top: 133px;
+	margin-left: 707px;
+}
+
+/*east coast*/
+#beast-coast {
+	margin-left: 0%;
+	display: none;
+}
+
+.east-coast-pins {
+	height: 50px;
+	width: auto;
+	position: absolute;
+	z-index: 2;
+	display: none;
+}
+
+.east-coast-pins:hover {
+	height: 55px;
+	width: auto;
+}
+
+.new-york {
+	margin-top: 312px;
+	margin-left: 887px;
+}
+
+.philly {
+	margin-top: 345px;
+	margin-left: 830px;
+}
+
+.niagara {
+	margin-top: 287px;
+	margin-left: 752px;
+}
+
+.toronto {
+	margin-top: 275px;
+	margin-left: 737px;
+}
+
+.montreal {
+	margin-top: 195px;
+	margin-left: 840px;
+}
+
+.nyc-map {
+	display: none;
+}
+
+.nyc-photos {
+	display: none;
+	height: 580px;
+	width: auto;
+	margin-left: 55%;
+}

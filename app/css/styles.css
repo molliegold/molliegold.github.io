@@ -25,6 +25,16 @@ a {
 	text-decoration: none;
 }
 
+.home {
+	position: absolute;
+	top: 0;
+	left: 7%;
+}
+
+.home a {
+	color: black;
+}
+
 /**********************************************************************/
 /*logo*/
 h1 {

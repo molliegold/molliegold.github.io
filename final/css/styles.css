@@ -5,6 +5,16 @@ html {
 body {
 	background-color: #cccccc;
 }
+.home {
+	position: absolute;
+	top: 0;
+	left: 7%;
+}
+
+.home a {
+	text-decoration: none;
+	color: black;
+}
 
 .paper {
 	background-color: white;
@@ -44,78 +54,83 @@ body {
 /*nav bar at top*/
 .nav {
 	border: 2px solid black;
-	background-color: #cccccc;
-/*	height: 60px;*/
-	width: 410px;
+	background-color: transparent;
+	height: 60px;
+	width: 450px;
 	margin: 20px auto;
 }
 
 /*margin*/
 .margins {
-	background-color: #cccccc;
-	border-left: 2px solid black;
 	display: inline-block;
-	width: 135px;
-	height: 60px;
+	float: right;
+	background-color: transparent;
+	margin-top: 10px;
+	width: 130px;
 }
 
-.margin-left, .margin-center, .margin-right {
-	background-color: #cccccc;
+.margin-left, .margin-center {
+	background-color: transparent;
 	display: inline-block;
 	width: 50px;
 	height: 40px;
-	margin: 9px 0px 7px 10px;
+	margin-left: 5px;
+	border: 1px solid transparent
 }
 
-.margin-left:hover, .margin-center:hover, .margin-right:hover {
+.margin-left:hover, .margin-center:hover {
 	border: 1px solid black;
 	border-radius: 3px;
 	cursor: pointer;
 }
 
-.margin-left img, .margin-center img, .margin-right img {
+.margin-left img, .margin-center img {
 	width: 35px;
 	height: 35px;
-	padding: 3px 0px 3px 7px;
+	padding-left: 7px;
+	border: 1px solid transparent;
 }
 
 /*classes for margins when clicked*/
 .margin-click {
 	border: 1px solid black;
 	border-radius: 3px;
-	background-color: #aeaeae;
 }
 
 /*font family & size */
 .font-fam {
 	display: inline-block;
-	background-color: #cccccc;
+	margin: 0;
+	background-color: transparent;
 	width: 160px;
 	height: 60px;
-	margin: 0;
 	border-right: 2px solid black;
 }
 
 .font-size {
-	background-color: #cccccc;
+	margin: 0;
 	display: inline-block;
-	width: 100px;
+	background-color: transparent;
+	width: 140px;
 	height: 60px;
+	border-right: 2px solid black;
 }
 
 .font-fam p, .font-size p {
+	margin: 0;
 	display: inline-block;
 	font-family: "Avenir Next";
 	font-size: 20px;
 	text-align: center;
 	width: 130px;
 	margin-left: 10px;
+	margin-top: 10px;
 	padding: 5px;
+	border: 1px solid transparent;
 }
 
 .font-size p {
-	width: 50px;
-	margin-left: 20px;
+	width: 110px;
 }
 
 .font-size:hover, .font-fam:hover {
@@ -132,6 +147,3 @@ body {
 	border: 1px solid black;
 	border-radius: 3px;
 }
-
-
-

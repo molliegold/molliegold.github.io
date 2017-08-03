@@ -1,0 +1,148 @@
+#all {
+	background-color: grey;
+	width: 1024px;
+	position: absolute;
+}
+
+body {
+	background-color: grey;
+}
+
+#back {
+	background-color: white;
+	size: 14px;
+	position: absolute;
+	width: 50px;
+	text-align: center;
+	height: 40px;
+}
+
+#back a {
+	text-decoration: none;
+	color: black;
+}
+
+#hover {
+	position: absolute;
+	font-size: 12px;
+	margin-top: 20px;
+	margin-left: 85%;
+	color: white;
+}
+
+#red {
+	height: 300px;
+	width: 300px;
+	background-color: red;
+	opacity: 0.8;
+	border-radius: 100%;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 35%;
+}
+
+#blue {
+	height: 300px;
+	width: 300px;
+	background-color: blue;
+	opacity: 0.6;
+	border-radius: 100%;
+	position: absolute;
+	margin-top: 220px;
+	margin-left: 23%;
+}
+
+#yellow {
+	height: 300px;
+	width: 300px;
+	background-color: yellow;
+	opacity: 0.6;
+	border-radius: 100%;
+	position: absolute;
+	margin-top: 220px;
+	margin-left: 45%;
+}
+
+p {
+	font-family: Helvetica;
+	font-size: 50px;
+	margin-top: 550px;
+	margin-left: 37%;
+	text-align: right;
+	position: relative;
+	font-weight: 800;
+}
+
+#white {
+	background-color: white;
+	position: absolute;
+	z-index: -1;
+	width: 500px;
+}
+
+#red:hover {
+	background-color: green;
+	opacity: 0.6;
+}
+
+#blue:hover {
+	background-color: orange;
+	opacity: 0.7;
+}
+
+#yellow:hover {
+	background-color: purple;
+}
+
+#pink {
+	background-color: grey;
+	position: absolute;
+	height: 250px;
+	width: 250px;
+	margin-top: 62%;
+	margin-left: 40%;
+	border-radius: 100%;
+	z-index: -2;
+}
+#groovy {
+	margin-top: 140px;
+	font-size: 20px;
+	margin-right: 10px;
+	color: grey;
+	visibility: hidden;
+}
+
+#pink:hover {
+	background-color: #c1f400;
+}
+
+#pink:hover #groovy {
+	visibility: visible;
+}
+
+#hover:hover {
+	background-color: #FF00FF;
+	padding: 5px;
+	font-size: 16px;
+	margin-left: 83%;
+}
+	
+#uno:hover {
+	color: #ff6e1f;
+	text-shadow: 2px 2px 6px #000000;
+}
+
+#dos:hover {
+	color: #18e5d6;
+	text-shadow: 2px 2px 6px #000000;
+}
+
+#tres:hover {
+	color: #ff12ad;
+	text-shadow: 2px 2px 6px #000000;
+}
+
+#un:hover {
+	color: #9736ce;
+	text-shadow: 2px 2px 6px #000000;
+}
